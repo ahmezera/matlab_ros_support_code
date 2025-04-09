@@ -15,7 +15,7 @@ function [res,q] = moveToQ(config,optns,custom)
     r = optns{'rHandle'};  
 
     % Get latest joint_states
-    ros_cur_jnt_state_msg = receive(r.joint_state_sub,1);
+    ros_cur_jnt_state_msg = receive(r.joint_state_sub,3);
     
     % Get steps/duration
     traj_steps = optns{'traj_steps'};
