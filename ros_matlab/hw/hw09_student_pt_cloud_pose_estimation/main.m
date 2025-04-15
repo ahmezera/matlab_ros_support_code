@@ -52,3 +52,5 @@
     
     % Get the pose of each detected object
     objectData = getObjectData(ptCloud_pic, nonPlane_pic, myImg, bboxes, numOfObjects, base_to_cam_pose, cam_to_base_pose, labeled);
+
+    objectData
