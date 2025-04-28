@@ -56,12 +56,12 @@ function objectData = getObjectData(ptCloud_base, nonPlane_pic, myImg, bboxes, n
     %[xyz,theta,ptCloud_vec,scene_pca_vec] = findObjectPoses(ptCloud_tform, myImg, bboxes, gridDownsample, nonPlaneMask);
 
     % If using merged point clouds:
-    [xyz,theta,ptCloud_vec,scene_pca_vec] = betterObjectPoses(ptCloud_tform_cam, ...    % all points wrt to base
-                                                              nonPlane_tform_cam, ...   % nonPlane points wrt to base
-                                                              myImg, ...                % rgb image
-                                                              bboxes, ...               % yolo bounding boxes
-                                                              gridDownsample, ...       % downsample factor
-                                                              base_to_cam_pose);        % base to cam pose
+    %[xyz,theta,ptCloud_vec,scene_pca_vec] = betterObjectPoses(ptCloud_tform_cam, ...    % all points wrt to base
+    %                                                          nonPlane_tform_cam, ...   % nonPlane points wrt to base
+    %                                                          myImg, ...                % rgb image
+    %                                                          bboxes, ...               % yolo bounding boxes
+    %                                                          gridDownsample, ...       % downsample factor
+    %                                                          base_to_cam_pose);        % base to cam pose
     
     %% 03 Visualize Objects 
     
